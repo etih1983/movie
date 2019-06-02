@@ -1,0 +1,15 @@
+
+<ul id="movies-container" [@movies-affect]="movies.length">
+    <!--<li *ngFor="let movie of movies" [ngStyle]="{'background-image': 'url({{photo1}})'}">-->
+        <li *ngFor="let movie of movies | orderBy: 'movie.name'">
+           <a routerLink="{{movie.id}}"> <img src="assets/photos/movies/{{movie.photo}}" alt=""></a>
+          <div>
+              {{movie.name}} - {{movie.genre.name}}<br>
+              {{movie.length}} Min <br>
+              <div class="social"><span class="favorite">Add to favorites</span></div>
+            </div>
+    </li>
+</ul>
+<!--{{movie | json}}-->
+
+

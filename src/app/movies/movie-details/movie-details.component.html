@@ -1,0 +1,11 @@
+<div id="movie-details-container">
+  <div class="left"><img src="assets/photos/movies/{{movie?.photo}}" alt=""/></div>
+  <div class="right">
+  <div class="title">{{movie?.name}}</div>
+  <div class="title">{{movie?.description}}</div>
+  <div class="title">{{movie?.genre?.name}} - {{movie?.length}} Minutes</div>
+  <div class="title">{{movie?.publishDate |  date: 'dd/MM/yyyy'}}</div>
+  </div>
+</div>
+  <app-movie-reviews></app-movie-reviews>
+    <!--{{movie | json}}-->

@@ -1,0 +1,4 @@
+#movie-details-container{ width: 100%; height: auto;}
+#movie-details-container > div.left { float: left; width: 50%;}
+#movie-details-container > div.left img{ width: 200px; height: 300px;}
+#movie-details-container > div.right{ font-size: 18px;}
